@@ -8,6 +8,8 @@ private:
     FilteringCriteria* crt1;
     FilteringCriteria* crt2;
 public:
+    FilteringCriteriaAnd();
+    FilteringCriteriaAnd(FilteringCriteria*crt1, FilteringCriteria* crt2);
     DynamicArray<Offer> filter(DynamicArray<Offer>& arr);
 
 };
