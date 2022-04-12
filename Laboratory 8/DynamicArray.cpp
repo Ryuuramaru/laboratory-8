@@ -76,11 +76,11 @@ void DynamicArray::append(ElementType v, bool* err)
 
 ostream& operator<<(ostream& s, const DynamicArray& arr) {
 	// [1 2 3 4 5 ]
-	s << "[";
 	for (unsigned int i = 0; i < arr.length; i++) {
-		s << arr.data[i] << " ";
+		s << arr.data[i] << '\n'
+		  << endl;
 	}
-	s << "]";
+	s << endl;
 	return s;
 }
 
@@ -92,7 +92,7 @@ ElementType DynamicArray::popBack() {
 		cerr << "Precondition does not hold: popBack()" << endl;
 		exit(-1);
 	}
-		
+
 	// convention 0 - elements that were not set
 
 	ElementType v = data[length];

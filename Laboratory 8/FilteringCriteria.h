@@ -1,27 +1,27 @@
 #pragma once
 #include "DynamicArray.h"
+#include "Offer.h"
 
 // you can add all your filtering classes in this module
 class FilteringCriteria
 {
-    DynamicArray filter(DynamicArray &data);
+	DynamicArray filter(DynamicArray& data);
 };
 
-class FilterByPrice : public FilteringCriteria
+class FilteringPrice : public FilteringCriteria
 {
 public:
-    DynamicArray filter(DynamicArray &data);
-
-private:
-    unsigned int price;
+	static DynamicArray filter(DynamicArray& data, unsigned int price);
 };
 
-class FilterByType : public FilteringCriteria
+class FilteringType : public FilteringCriteria
 {
 public:
-    DynamicArray filter(DynamicArray &data);
-
-private:
-    unsigned int price;
+	static DynamicArray filter(DynamicArray& data, o_type type);
 };
 
+class FilteringCriteriaTypeAndPrice : public FilteringCriteria
+{
+public:
+	static DynamicArray filter(DynamicArray& data, unsigned int price, o_type type);
+};
