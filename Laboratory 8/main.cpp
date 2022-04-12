@@ -60,7 +60,7 @@ int main()
 	FilteringTest::runAllTests();
 	DynamicArrayTest::runAllTests();
 
-	DynamicArray arr;
+	DynamicArray<std::string>arr;
 
 	char input;
 	bool run = true;
