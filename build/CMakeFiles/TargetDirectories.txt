@@ -1,0 +1,9 @@
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/Experimental.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/Nightly.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/Continuous.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/vsc.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/PACKAGE.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/rosum/Desktop/moodle/code/laboratory-8/build/CMakeFiles/ZERO_CHECK.dir

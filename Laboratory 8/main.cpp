@@ -60,7 +60,7 @@ int main()
 	FilteringTest::runAllTests();
 	DynamicArrayTest::runAllTests();
 
-	DynamicArray<std::string>arr;
+	DynamicArray<Offer> arr;
 
 	char input;
 	bool run = true;
@@ -109,14 +109,16 @@ int main()
 			cout << "Enter price: ";
 			unsigned int price;
 			cin >> price;
-			arr = FilteringPrice::filter(arr, price);
+			FilteringPrice flr = FilteringPrice(price);
+			arr = flr.filter(arr);
 			cout << arr << endl;
 			break;
 		}
 		case 't':
 		{
 			o_type type = selectType();
-			arr = FilteringType::filter(arr, type);
+			FilteringType flr = FilteringType(type);
+			arr = flr.filter(arr);
 			cout << arr << endl;
 			break;
 		}
@@ -127,7 +129,10 @@ int main()
 			cin >> price;
 			cout << endl;
 			o_type type = selectType();
-			arr = FilteringCriteriaTypeAndPrice::filter(arr, price, type);
+			FilteringPrice flr1 = FilteringPrice(price);
+			FilteringType flr2 = FilteringType(type);
+			FilteringCriteriaAnd<FilteringPrice, FilteringType> flr = FilteringCriteriaAnd<FilteringPrice, FilteringType>(flr1, flr2);
+			arr = flr.filter(arr);
 			cout << arr << endl;
 			break;
 		}

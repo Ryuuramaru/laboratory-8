@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rosum\Desktop\moodle\code\laboratory-8\build\CMakeFiles\37eb51d8cd1ac86b703c495e25c27692\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CB5E2BA5-E4A0-3D3A-8762-56089E6E62F9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

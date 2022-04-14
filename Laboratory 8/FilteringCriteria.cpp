@@ -1,31 +1,46 @@
 #include "FilteringCriteria.h"
 
-DynamicArray FilteringCriteria::filter(DynamicArray &other)
+DynamicArray<Offer> FilteringCriteria::filter(DynamicArray<Offer>& other)
 {
-    return other;
+	return other;
 }
 
-DynamicArray FilteringPrice::filter(DynamicArray &data, unsigned int price)
+FilteringPrice::FilteringPrice(unsigned int price)
 {
-    DynamicArray filteredData;
-    for (int i = 0; i < data.getLength(); i++)
-        if (data.get(i).getPrice() < price)
-            filteredData.append(data.get(i));
-    return filteredData;
+	this->price = price;
+}
+FilteringDeparture::FilteringDeparture(std::string departure)
+{
+	this->departure = departure;
+}
+FilteringType::FilteringType(o_type type)
+{
+	this->type = type;
 }
 
-DynamicArray FilteringType::filter(DynamicArray &data, o_type type)
+DynamicArray<Offer> FilteringPrice::filter(DynamicArray<Offer>& data)
 {
-    DynamicArray filteredData;
-    for (int i = 0; i < data.getLength(); i++)
-        if (data.get(i).getType() == type)
-            filteredData.append(data.get(i));
-    return filteredData;
+	DynamicArray<Offer> filteredData;
+	for (int i = 0; i < data.getLength(); i++)
+		if (data.get(i).getPrice() < price)
+			filteredData.append(data.get(i));
+	return filteredData;
 }
 
-DynamicArray FilteringCriteriaTypeAndPrice::filter(DynamicArray &data, unsigned int price, o_type type)
+DynamicArray<Offer> FilteringType::filter(DynamicArray<Offer>& data)
 {
-    DynamicArray filteredPrice = FilteringPrice::filter(data, price);
-    DynamicArray filteredData = FilteringType::filter(filteredPrice, type);
-    return filteredData;
+	DynamicArray<Offer> filteredData;
+	for (int i = 0; i < data.getLength(); i++)
+		if (data.get(i).getType() == type)
+			filteredData.append(data.get(i));
+	return filteredData;
+}
+
+DynamicArray<Offer> FilteringDeparture::filter(DynamicArray<Offer>& data)
+{
+	DynamicArray<Offer> filteredData;
+	for (int i = 0; i < data.getLength(); i++)
+		if (data.get(i).getDepartureLocation() == departure)
+			filteredData.append(data.get(i));
+	return filteredData;
 }

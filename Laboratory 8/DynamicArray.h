@@ -33,7 +33,7 @@ public:
 	}
 
 	// copy constructor
-	DynamicArray(const DynamicArray &other)
+	DynamicArray(const DynamicArray& other)
 	{
 		// deep copy of other
 		length = other.length;
@@ -55,7 +55,7 @@ public:
 	}
 
 	// assignment operator
-	DynamicArray &operator=(const DynamicArray &other)
+	DynamicArray& operator=(const DynamicArray& other)
 	{
 
 		if (this != &other)
@@ -90,7 +90,7 @@ public:
 	inline unsigned int getCapacity() const { return capacity; }
 
 	// adds an element at the end
-	void append(ElementType v, bool *err = nullptr)
+	void append(ElementType v, bool* err = nullptr)
 	{
 		// todo
 		// check if the length < capacity
@@ -150,7 +150,7 @@ public:
 	// a[10]
 	// index >= 0 and index < length
 	// -1 is returned if the index is not valid
-	ElementType &get(unsigned int index)
+	ElementType& get(unsigned int index)
 	{
 
 		// pre index >=0 and index < length
@@ -167,13 +167,13 @@ public:
 	}
 
 	// print the array
-	ostream &operator<<(ostream &s, const DynamicArray &arr)
+	ostream& operator<<(ostream& s, const DynamicArray& arr)
 	{
 		// [1 2 3 4 5 ]
 		for (unsigned int i = 0; i < arr.length; i++)
 		{
 			s << arr.data[i] << '\n'
-			  << endl;
+				<< endl;
 		}
 		s << endl;
 		return s;
@@ -203,7 +203,7 @@ private:
 		this->capacity = newCapacity;
 		// no realloc  in c++
 
-		ElementType *newData = new ElementType[newCapacity]();
+		ElementType* newData = new ElementType[newCapacity]();
 		if (newData == nullptr)
 		{
 			cerr << "resize(): failed to allocate memory" << endl;
