@@ -61,6 +61,12 @@ build CMakeFiles/Laboratory_8.dir/FilteringCriteriaAnd.cpp.obj: CXX_COMPILER__La
   OBJECT_DIR = CMakeFiles\Laboratory_8.dir
   OBJECT_FILE_DIR = CMakeFiles\Laboratory_8.dir
 
+build CMakeFiles/Laboratory_8.dir/FilteringByPriceLessThan.cpp.obj: CXX_COMPILER__Laboratory_8_Debug C$:/Users/user/Desktop/Projects/laboratory-8/Laboratory$ 8/FilteringByPriceLessThan.cpp || cmake_object_order_depends_target_Laboratory_8
+  DEP_FILE = CMakeFiles\Laboratory_8.dir\FilteringByPriceLessThan.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Laboratory_8.dir
+  OBJECT_FILE_DIR = CMakeFiles\Laboratory_8.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Laboratory_8
@@ -69,7 +75,7 @@ build CMakeFiles/Laboratory_8.dir/FilteringCriteriaAnd.cpp.obj: CXX_COMPILER__La
 #############################################
 # Link the executable Laboratory_8.exe
 
-build Laboratory_8.exe: CXX_EXECUTABLE_LINKER__Laboratory_8_Debug CMakeFiles/Laboratory_8.dir/main.cpp.obj CMakeFiles/Laboratory_8.dir/FilteringCriteriaAnd.cpp.obj
+build Laboratory_8.exe: CXX_EXECUTABLE_LINKER__Laboratory_8_Debug CMakeFiles/Laboratory_8.dir/main.cpp.obj CMakeFiles/Laboratory_8.dir/FilteringCriteriaAnd.cpp.obj CMakeFiles/Laboratory_8.dir/FilteringByPriceLessThan.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Laboratory_8.dir
