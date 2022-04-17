@@ -6,7 +6,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="346ed7d1-be97-4679-9776-4e47d91ca7c8" name="Changes" comment="" />
+    <list default="true" id="346ed7d1-be97-4679-9776-4e47d91ca7c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory 8/DynamicArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory 8/DynamicArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory 8/FilteringCriteria.h" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory 8/FilteringCriteria.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory 8/FilteringCriteriaAnd.h" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory 8/FilteringCriteriaAnd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory 8/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory 8/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +49,10 @@
       <option name="presentableId" value="Default" />
       <updated>1649772732312</updated>
       <workItem from="1649772734028" duration="1238000" />
+      <workItem from="1650043719034" duration="41000" />
+      <workItem from="1650043781931" duration="9000" />
+      <workItem from="1650043801794" duration="18000" />
+      <workItem from="1650184539112" duration="18000" />
     </task>
     <servers />
   </component>

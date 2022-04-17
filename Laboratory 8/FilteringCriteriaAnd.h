@@ -3,14 +3,16 @@
 //
 #include "FilteringCriteria.h"
 
-class FilteringCriteriaAnd : public FilteringCriteria{
+class FilteringCriteriaAnd: public FilteringCriteria {
 private:
-    FilteringCriteria* crt1;
-    FilteringCriteria* crt2;
+    FilteringCriteria *crt1;
+    FilteringCriteria *crt2;
 public:
     FilteringCriteriaAnd();
-    FilteringCriteriaAnd(FilteringCriteria*crt1, FilteringCriteria* crt2);
-    DynamicArray<Offer> filter(DynamicArray<Offer>& arr);
+
+    FilteringCriteriaAnd(FilteringCriteria *crt1, FilteringCriteria *crt2);
+
+    DynamicArray<Offer> filter(DynamicArray<Offer> &arr);
 
 };
 

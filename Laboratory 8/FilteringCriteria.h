@@ -40,8 +40,8 @@ private:
 	std::string departure;
 };
 
-template <typename Criteria1, typename Criteria2>
 
+template <typename Criteria1, typename Criteria2>
 class FilteringCriteriaAnd : public FilteringCriteria
 {
 public:
