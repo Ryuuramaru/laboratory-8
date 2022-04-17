@@ -4,9 +4,6 @@
 
 using namespace std;
 
-
-
-
 Offer::Offer() {
 	this->departureLocation = "";
 	this->id = "";

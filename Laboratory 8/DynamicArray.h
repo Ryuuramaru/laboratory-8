@@ -12,7 +12,7 @@ using std::ostream;
 template<typename ElementType>
 class DynamicArray {
 public:
-	inline DynamicArray(int capacity = 100) // = default parameter
+	DynamicArray(int capacity = 100) // = default parameter
 	{
 		length = 0;
 		this->capacity = capacity;
@@ -26,13 +26,13 @@ public:
 
 	// RULE OF THREE
 	// destructor
-	inline ~DynamicArray() {
+	~DynamicArray() {
 		// free the allocated memory
 		delete[] data;
 	}
 
 	// copy constructor
-	inline DynamicArray(const DynamicArray<ElementType>& other) {
+	DynamicArray(const DynamicArray<ElementType>& other) {
 		// deep copy of other
 		length = other.length;
 		capacity = other.capacity;
@@ -52,7 +52,7 @@ public:
 	}
 
 	// assignment operator
-	inline DynamicArray& operator=(const DynamicArray<ElementType>& other) {
+	DynamicArray& operator=(const DynamicArray<ElementType>& other) {
 
 		if (this != &other) { // self assignment check
 			// deep copy of other
@@ -79,12 +79,12 @@ public:
 
 	// getter for the length
 	// inline - it MUST be implemented in the header
-	inline unsigned int getLength() const { return length; }
+	unsigned int getLength() const { return length; }
 
-	inline unsigned int getCapacity() const { return capacity; }
+	unsigned int getCapacity() const { return capacity; }
 
 	// adds an element at the end
-	inline void append(ElementType v, bool* err = nullptr) {
+	void append(ElementType v, bool* err = nullptr) {
 		// todo
 		// check if the length < capacity
 		if (length == capacity) {
@@ -97,7 +97,7 @@ public:
 
 	// remove the element from the end
 	// pre: the array is not empty
-	inline ElementType popBack() {
+	ElementType popBack() {
 		// delete and return the last element in the array
 		// pre array is not empty
 		if (length == 0) {
@@ -116,7 +116,7 @@ public:
 
 	// remove an element from position i
 	// index >= 0 and index < length
-	inline ElementType remove(unsigned int index) {
+	ElementType remove(unsigned int index) {
 		//  index >= 0 and index < length
 		// pre index >=0 and index < length
 		if (index >= 0 && index < length) {
@@ -137,7 +137,7 @@ public:
 	// a[10]
 	// index >= 0 and index < length
 	// -1 is returned if the index is not valid
-	inline ElementType& get(unsigned int index) {
+	ElementType& get(unsigned int index) {
 
 		// pre index >=0 and index < length
 		if (index >= 0 && index < length) {
@@ -151,7 +151,7 @@ public:
 	}
 
 	// print the array
-	inline friend ostream& operator<<(ostream& s, const DynamicArray<ElementType>& arr)
+	friend ostream& operator<<(ostream& s, const DynamicArray<ElementType>& arr)
 	{
 		// [1 2 3 4 5 ]
 		for (unsigned int i = 0; i < arr.length; i++) {
@@ -179,7 +179,7 @@ private:
 	// data - array itself
 	ElementType* data;
 
-	inline void resize(unsigned int newCapacity) {
+	void resize(unsigned int newCapacity) {
 
 		this->capacity = newCapacity;
 		// no realloc  in c++

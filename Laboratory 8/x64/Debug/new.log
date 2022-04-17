@@ -1,15 +1,11 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1098,5): warning MSB8027: Two or more files with the name of CMakeCXXCompilerId.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are cmake-build-debug\cmakefiles\3.21.1\compileridcxx\CMakeCXXCompilerId.cpp, out\build\x64-debug\cmakefiles\3.22.22022201-msvc_2\compileridcxx\CMakeCXXCompilerId.cpp.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1098,5): warning MSB8027: Two or more files with the name of CMakeCCompilerId.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are cmake-build-debug\cmakefiles\3.21.1\compileridc\CMakeCCompilerId.c, out\build\x64-debug\cmakefiles\3.22.22022201-msvc_2\compileridc\CMakeCCompilerId.c.
   FilteringCriteria.cpp
-C:\Users\rosum\Desktop\moodle\code\laboratory-8\Laboratory 8\Offer.h(10,2): warning C4091: 'extern ': ignored on left of 'o_type' when no variable is declared
   Offer.cpp
-C:\Users\rosum\Desktop\moodle\code\laboratory-8\Laboratory 8\Offer.h(10,2): warning C4091: 'extern ': ignored on left of 'o_type' when no variable is declared
   main.cpp
-C:\Users\rosum\Desktop\moodle\code\laboratory-8\Laboratory 8\Offer.h(10,2): warning C4091: 'extern ': ignored on left of 'o_type' when no variable is declared
   Generating Code...
 CMakeCCompilerId.obj : error LNK2005: main already defined in CMakeCXXCompilerId.obj
 main.obj : error LNK2005: main already defined in CMakeCXXCompilerId.obj
 x64\Debug\CMakeCXXCompilerId.obj : warning LNK4042: object specified more than once; extras ignored
 x64\Debug\CMakeCCompilerId.obj : warning LNK4042: object specified more than once; extras ignored
-x64\Debug\main.obj : warning LNK4042: object specified more than once; extras ignored
 C:\Users\rosum\Desktop\moodle\code\laboratory-8\Laboratory 8\x64\Debug\new.exe : fatal error LNK1169: one or more multiply defined symbols found

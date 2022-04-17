@@ -50,7 +50,7 @@ o_type selectType()
 	return type;
 }
 
-int main()
+int main(int argc, char* argv[])
 {
 	DynamicArray<Offer> arr;
 	char input;

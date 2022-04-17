@@ -105,7 +105,6 @@
     <ClCompile Include="Offer.cpp" />
     <ClCompile Include="out\build\x64-debug\cmakefiles\3.22.22022201-msvc_2\compileridcxx\CMakeCXXCompilerId.cpp" />
     <ClCompile Include="out\build\x64-debug\cmakefiles\3.22.22022201-msvc_2\compileridc\CMakeCCompilerId.c" />
-    <ClCompile Include="out\build\x64-debug\cmakefiles\showincludes\main.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicArray.h" />

@@ -8,12 +8,12 @@ template <typename Criteria1, typename Criteria2>
 class FilteringCriteriaAnd : public FilteringCriteria
 {
 public:
-	inline FilteringCriteriaAnd(Criteria1 criteria1, Criteria2 criteria2)
+	FilteringCriteriaAnd(Criteria1 criteria1, Criteria2 criteria2)
 	{
 		this->crt1 = criteria1;
 		this->crt2 = criteria2;
 	}
-	inline DynamicArray<Offer> filter(DynamicArray<Offer>& data)
+	DynamicArray<Offer> filter(DynamicArray<Offer>& data)
 	{
 		DynamicArray<Offer> temp = crt1.filter(data);
 		temp = crt2.filter(temp);

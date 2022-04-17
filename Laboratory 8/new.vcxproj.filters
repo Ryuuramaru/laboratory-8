@@ -36,9 +36,6 @@
     <ClCompile Include="out\build\x64-debug\cmakefiles\3.22.22022201-msvc_2\compileridcxx\CMakeCXXCompilerId.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="out\build\x64-debug\cmakefiles\showincludes\main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicArray.h">
