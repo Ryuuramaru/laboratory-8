@@ -14,6 +14,7 @@ public:
 
 class FilteringPrice : public FilteringCriteria {
 public:
+	FilteringPrice();
 	FilteringPrice(unsigned int price);
 	DynamicArray<Offer> filter(DynamicArray<Offer>& data);
 
@@ -23,6 +24,7 @@ private:
 
 class FilteringType : public FilteringCriteria {
 public:
+	FilteringType();
 	FilteringType(o_type type);
 	DynamicArray<Offer> filter(DynamicArray<Offer>& data);
 
@@ -33,31 +35,10 @@ private:
 class FilteringDeparture : public FilteringCriteria
 {
 public:
+	FilteringDeparture();
 	FilteringDeparture(std::string departure);
 	DynamicArray<Offer> filter(DynamicArray<Offer>& data);
 
 private:
 	std::string departure;
-};
-
-
-template <typename Criteria1, typename Criteria2>
-class FilteringCriteriaAnd : public FilteringCriteria
-{
-public:
-	FilteringCriteriaAnd(Criteria1 criteria1, Criteria2 criteria2)
-	{
-		this->crt1 = criteria1;
-		this->crt2 = criteria2;
-	}
-	DynamicArray<Offer> filter(DynamicArray<Offer>& data)
-	{
-		DynamicArray<Offer> temp = crt1.filter(data);
-		temp = crt2.filter(temp);
-		return temp;
-	}
-
-private:
-	Criteria1 crt1;
-	Criteria2 crt2;
 };

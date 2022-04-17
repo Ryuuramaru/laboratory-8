@@ -9,15 +9,26 @@ FilteringPrice::FilteringPrice(unsigned int price)
 {
 	this->price = price;
 }
+FilteringPrice::FilteringPrice()
+{
+	this->price = 0;
+}
 FilteringDeparture::FilteringDeparture(std::string departure)
 {
 	this->departure = departure;
+}
+FilteringDeparture::FilteringDeparture()
+{
+	this->departure = "";
 }
 FilteringType::FilteringType(o_type type)
 {
 	this->type = type;
 }
-
+FilteringType::FilteringType()
+{
+	this->type = o_type::circuit;
+}
 DynamicArray<Offer> FilteringPrice::filter(DynamicArray<Offer>& data)
 {
 	DynamicArray<Offer> filteredData;

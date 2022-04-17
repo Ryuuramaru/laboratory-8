@@ -1,13 +1,10 @@
-#include "OfferTest.h"
-#include "FilteringTest.h"
-#include "DynamicArrayTest.h"
-
 #include <iostream>
 using namespace std;
 
 #include "DynamicArray.h"
 #include "Offer.h"
 #include "FilteringCriteria.h"
+#include "FilteringCriteriaAnd.h"
 
 void displayMenu()
 {
@@ -32,16 +29,16 @@ o_type selectType()
 		switch (type_input)
 		{
 		case 1:
-			type = circuit;
+			type = o_type::circuit;
 			break;
 		case 2:
-			type = citybreak;
+			type = o_type::citybreak;
 			break;
 		case 3:
-			type = cruise;
+			type = o_type::cruise;
 			break;
 		case 4:
-			type = allinclusive;
+			type = o_type::allinclusive;
 			break;
 		default:
 			cout << "That's not a valid type!" << endl;
@@ -55,13 +52,7 @@ o_type selectType()
 
 int main()
 {
-
-	OfferTest::runAllTests();
-	FilteringTest::runAllTests();
-	DynamicArrayTest::runAllTests();
-
 	DynamicArray<Offer> arr;
-
 	char input;
 	bool run = true;
 	while (run)
@@ -128,10 +119,12 @@ int main()
 			unsigned int price;
 			cin >> price;
 			cout << endl;
-			o_type type = selectType();
+			// o_type type = selectType();
+			std::string type = "Bucharest";
 			FilteringPrice flr1 = FilteringPrice(price);
-			FilteringType flr2 = FilteringType(type);
-			FilteringCriteriaAnd<FilteringPrice, FilteringType> flr = FilteringCriteriaAnd<FilteringPrice, FilteringType>(flr1, flr2);
+			FilteringDeparture flr2 = FilteringDeparture(type);
+			FilteringCriteriaAnd<FilteringPrice, FilteringDeparture> flr = FilteringCriteriaAnd<FilteringPrice, FilteringDeparture>(flr1, flr2);
+
 			arr = flr.filter(arr);
 			cout << arr << endl;
 			break;

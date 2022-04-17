@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-enum o_type
+extern enum class o_type
 {
 	circuit,
 	citybreak,
