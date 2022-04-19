@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\CustomExceptions">
+      <UniqueIdentifier>{7dd0dd80-22e0-4a2f-8d9d-4f89b4e4ff81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CustomExceptions">
+      <UniqueIdentifier>{88207dd9-8c33-43ea-8d0c-86adc49ae293}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -22,6 +28,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Offer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyOutOfBoundsExceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -37,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="Offer.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyOutOfBoundsExceptions.h">
+      <Filter>Header Files\CustomExceptions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
