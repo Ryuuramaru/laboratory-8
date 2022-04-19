@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-#include "DynamicArray.h"
-#include "Offer.h"
-#include "FilteringCriteria.h"
 #include "FilteringCriteriaAnd.h"
 
 void displayMenu()

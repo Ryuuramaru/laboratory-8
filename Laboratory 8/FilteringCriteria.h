@@ -1,7 +1,6 @@
 #pragma once
 
 #include "DynamicArray.h"
-#include "Offer.h"
 
 DynamicArray<Offer>;
 
